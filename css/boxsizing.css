@@ -1,0 +1,17 @@
+.div1{
+    height: 100px;
+    width: 300px;
+    border: 2px solid red;
+    background-color: blueviolet;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+.div2{
+    height: 100px;
+    width: 300px;
+    padding:30px;
+    border: 2px solid red;
+    background-color: aqua;
+    margin-top: 20px;
+    box-sizing: border-box;
+}

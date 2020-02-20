@@ -1,0 +1,24 @@
+.resizable1{
+    resize: horizontal;
+    overflow: auto;
+    border: 2px solid salmon;
+    width: 300px;
+    height: 100px;
+    margin: 10px 0px;
+}
+.resizable2{
+    resize: vertical;
+    overflow: auto;
+    border: 2px solid salmon;
+    width: 300px;
+    height: 100px;
+    margin: 10px 0px;
+}
+.resizable3{
+    resize: both;
+    overflow: auto;
+    border: 2px solid salmon;
+    width: 300px;
+    height: 100px;
+    margin: 10px 0px;
+}

@@ -1,0 +1,130 @@
+:root{
+    background-color: tan;
+}
+a:link{
+    background-color: antiquewhite;
+    color: red;
+}
+a:active{
+    background-color: aqua;
+    color: green;
+}
+a:visited{
+    background-color: blueviolet;
+    color: blue;
+}
+a:hover{
+    background-color: yellow;
+    color: #000;
+}
+a.highlight:hover{
+    background-color: aliceblue;
+    color: blue;
+}
+div.tooltip p{
+    display: none;
+    background-color: yellow;
+    color: #000;
+    text-align: center;
+}
+div.tooltip:hover p{
+    display: block;
+}
+div.common p:first-child{
+    color: red;
+}
+div.firstoftype p:first-of-type{
+    color: red;
+}
+div.common.firstitalic p i:first-child{
+    background-color: yellowgreen;
+}
+div.common.allitalic p:first-child i{
+    background-color: yellow;
+}
+div.common p:last-child{
+    color: green;
+}
+div.firstoftype p:last-of-type{
+    color: green;
+}
+div.common.firstitalic p i:last-child{
+    background-color: green;
+}
+div.common.allitalic p:last-child i{
+    background-color: green;
+}
+input[type=text]:enabled{
+    background-color: red;
+}
+input[type=text]:focus{
+    background-color:yellow;
+}
+input[type=text]:disabled{
+    background-color: thistle;
+}
+input[type=radio]{
+    background-color: aqua;
+    color: #000;
+}
+input[type=radio]:checked{
+    height: 50px;
+    width: 50px;
+}
+input:invalid{
+    border: 2px solid red;
+}
+input:in-range{
+    border: 2px solid green;
+}
+input:out-of-range{
+    border: 4px solid red;
+}
+p:empty{
+    background-color: blueviolet;
+}
+:not(p){
+    color: sienna
+}
+tr:nth-child(even){
+    background-color: aqua;
+}
+tr:nth-child(odd){
+    background-color:yellow;
+}
+input:optional {
+    background-color: wheat;
+  }
+  input:read-only{
+      background-color: yellowgreen;
+  }
+  input:required{
+    background-color: yellow;
+  }
+  input:valid{
+      background-color: green;
+  }
+  :target {
+    border: 2px solid #D4D4D4;
+    background-color: #e5eecc;
+  }
+  pre::first-line{
+      color:steelblue;
+      background-color: turquoise;
+      font-variant: small-caps;
+  }
+  pre::after{
+      content: "-------Author-Sumit";
+  }
+  pre::before{
+    content: "---Article---";
+}
+pre::first-letter {
+    font-size: 200%;
+    color: #8A2BE2;
+  }
+  pre::selection {
+    color: red;
+    background: yellow;
+  }
+  

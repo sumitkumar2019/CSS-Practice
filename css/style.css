@@ -1,0 +1,328 @@
+/*
+Box modal calculation
+div {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+
+ 320px (width)
++ 20px (left + right padding)
++ 10px (left + right border)
++ 0px (left + right margin)
+= 350px
+*/
+
+body{
+    /*Short hand:  color image repeat position : - background: #ffffff url("img_tree.png") no-repeat right top;*/
+    background-color: teal;
+    background-image: url("/images/images.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right:260px;
+}
+h1{
+    background-color: dodgerblue;
+    font-size: 23px;
+    text-align: center;
+    color: red;/* hsl(), rgb(), hsla(), hex value*/
+    border: 2px solid black;
+    margin: inherit;
+    padding: 20px 30px;
+}
+p.base{
+ background-color: tomato;
+ font-size: 13;
+ color: blue;  
+ border: 4px solid black;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ margin-right: 20px;
+ margin-left: 20px;
+ padding: 20px 30px 25px 35px;
+}
+.btn-red{
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    display: inline-block;
+  }
+.btn-green{
+    background-color:green;
+    color: white;
+    padding: 15px 25px;
+    display: inline-block;
+}
+.btn-blue{
+    background-color:darkcyan;
+    color: white;
+    padding: 15px 25px;
+    display: inline-block;
+}
+.lst1{
+    list-style-type: circle;
+    list-style-position: outside;
+}
+.lst2{
+    list-style-type: armenian;
+    list-style-position: inside;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+table, th, td{
+    border: 2px solid red;
+}
+th{
+    background-color: #4CAF50;
+    color: white;
+}
+th, td{
+    height: 50px;
+    vertical-align: bottom;
+    text-align: center;
+    padding: 10px;
+}
+tr:hover{
+    background-color: blue;
+    color: aliceblue;
+}
+tr:nth-child(even){
+    background-color: burlywood;
+}
+tr:nth-child(even):hover{
+    background-color: blue;
+    color: aliceblue;
+}
+.outline{
+    border-color: black;
+    border-width: 10px;
+    border-style: dotted;
+    outline-style: solid;
+    outline-width: 10px;
+    outline-offset: 15px;
+    font-size: 40px;
+    padding: 70px;
+    width: 786px;
+    margin: 20px;
+    text-shadow: 4px 3px blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-style: oblique;
+    position: relative;
+    top: 25px;
+}
+div.relative{
+    background-color: tomato;
+    position: relative;
+    width:400px;
+    height:100px;
+}
+div.absolute{
+    background-color: aqua;
+    position: absolute;
+    right:0px;
+    bottom: 0px;
+}
+div.sticky{
+    position: sticky;
+    top:0px;
+    left:400px;
+    width:200px;
+    height:100px;
+    background-color: yellow;
+}
+div.fixed{
+    position: fixed;
+    right:0px;
+    bottom: 0px;
+    width:300px;
+    height:100px;
+    background-color: violet;
+    z-index: -1;
+}
+.wrapper{
+    background-color: blueviolet;
+    width: 600px;
+    margin: 30px;
+    padding: 20px;
+    position: relative;
+    top: 25px;
+}
+#main{
+    background-color: powderblue;
+    margin: 20px;
+    height: 500px;
+    width: 120%;
+}
+
+p.dotted{
+    border-style: dotted;
+    border-width: 7px;
+    border-color: crimson;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+}
+p.dashed{
+    border-style: dashed;
+    border-width: 7px;
+    border-color: blue;
+    padding: 20px;
+    text-align: left;
+    text-decoration: dashed;
+    text-transform: lowercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-variant: small-caps;
+}
+p.solid{
+    border-style: dotted solid dotted solid;
+    border-width: 7px;
+    border-color: red green blue yellow;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: right;
+    text-decoration: overline;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-size: 1.5em;
+}
+p.double{
+    border-style: double;
+    border-width: 7px;
+    border-color: yellowgreen;
+    padding: 20px;
+    text-align: justify;
+    text-decoration: line-through;
+    text-transform: initial;
+}
+p.hidden{
+    border-style: hidden;
+    border-width: 7px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: dotted;
+    text-transform: inherit;
+}
+p.inherit{
+    border-style: inherit;
+    border-width: 7px;
+    padding: 20px;
+    text-align: justify;
+    text-decoration: double;
+    text-transform: unset;
+}
+p.initial{
+    border-style: initial;
+    border-width: 7px;
+    border-color: red;
+    padding: 20px;
+    text-align: left;
+    text-decoration: wavy;
+}
+p.inset{
+    border-style: inset;
+    border-width: 7px;
+    padding: 20px;
+    text-align: right;
+}
+p.none{
+    border-style: none;
+    padding: 20px;
+    text-indent: 150px;
+    letter-spacing: 5px;
+    line-height: 2;
+    font-size: 1em;
+}
+p.outset{
+    border-style: outset;
+    border-width: 7px;
+    border-color: brown;
+    padding: 20px;
+    text-align: right;
+    direction: rtl;
+}
+p.ridge{
+    border-style: ridge;
+    border-width: 7px;
+    border-color: yellow;
+    padding: 20px;
+    text-align: center;
+    word-spacing: -5px;
+    font-weight: bold;
+}
+li{
+    display: inline;
+    padding: 10px;
+    background-color: #f44336;
+    color: aliceblue;
+    text-decoration: none;
+}
+li:hover{
+    background-color: greenyellow;
+    color: black;
+}
+span{
+    display: block;
+}
+.widthdemo{
+    border: black solid;
+    width: 800px;
+    margin: 10px;
+}
+.maxwidthdemo{
+    border: black solid;
+    max-width: 800px;
+    margin: 10px;
+}
+div.overlap{
+    position: fixed;
+    right: 100px;
+    bottom: 0px;
+    background-color: azure;
+    width: 100px;
+    height:20px;
+    opacity: 0.7;
+}
+div.visible{
+    position: relative;
+    background-color: #4CAF50;
+    overflow: visible;
+    height: 130px;
+    width: 600px;
+}
+div.hidden{
+    position: relative;
+    top:10px;
+    background-color: #4CAF50;
+    overflow: hidden;
+    height: 80px;
+    width: 600px;
+}
+div.scroll{
+    position: relative;
+    top:15px;
+    background-color: #4CAF50;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    height: 80px;
+    width: 260px;
+}
+div.auto{
+    position: relative;
+    top:25px;
+    background-color: #4CAF50;
+    overflow: auto;
+    height: 80px;
+    width: 600px;
+}
+.floatright{
+    float: right;
+}

@@ -1,0 +1,18 @@
+body{
+    counter-reset: counter1;
+}
+h2{
+    counter-reset: counter2 counter3;
+}
+h2::before{
+    counter-increment: counter1;
+    content: "Section" counter(counter1)": ";
+}
+h3::before{
+    counter-increment: counter2;
+    content: counter(counter1) "."counter(counter2) ": ";
+}
+h3::after{
+    counter-increment: counter3;
+    content: counter(counter3);
+}

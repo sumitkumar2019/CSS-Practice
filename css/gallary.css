@@ -1,0 +1,22 @@
+.header{
+    background-color: teal;
+    padding: 20px;
+    text-align: center;
+    color: antiquewhite;
+}
+.footer{
+    background-color: teal;
+    padding: 20px;
+    text-align: center;
+    color: antiquewhite;
+    margin-top: 380px;
+}
+.gallary{
+    margin: 8px;
+    float: left;
+}
+.desc{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}

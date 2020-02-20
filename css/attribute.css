@@ -1,0 +1,30 @@
+a[target]{
+    background-color: aquamarine;
+}
+a[target="_blank"]{
+    background-color: yellow;
+}
+[title~="flower"]{
+    border: 5px solid black;
+}
+[class|=top]{
+    background-color: burlywood;
+}
+[class^=top]{
+    background-color: aquamarine;
+}
+[class$=top]{
+    background-color: green;
+}
+[class*=tes]{
+    background-color: violet;
+}
+input[type=text]{
+border: 2px solid green;
+}
+input[type=button]{
+    background-color: cadetblue;
+    color: black;
+    font-size: 13px;
+    padding: 10px;
+}

@@ -1,0 +1,29 @@
+:root{
+
+    --main-bg-color:coral;
+    --main-text-color:green;
+    --main-padding:20px;
+    --main-text-align:justify;
+    --main-top-margin:10px;
+}
+#one{
+    text-align: var(--main-text-align);
+    background-color: var(--main-bg-color);
+    padding: var(--main-padding);
+    color: var(--main-text-color);
+    margin-top: var(--main-top-margin);
+}
+#two{
+    text-align: var(--main-text-align);
+    background-color: var(--main-bg-color);
+    padding: var(--main-padding);
+    color: var(--main-text-color);
+    margin-top: var(--main-top-margin);
+}
+#three{
+    text-align: var(--main-text-align);
+    background-color: var(--main-bg-color);
+    padding: var(--main-padding);
+    color: var(--main-text-color);
+    margin-top: var(--main-top-margin);
+}

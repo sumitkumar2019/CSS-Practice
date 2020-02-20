@@ -1,0 +1,22 @@
+.header{grid-area: header;}
+.leftnav{grid-area: leftnav;}
+.content-area{grid-area: content-area;}
+.rightnav{grid-area: rightnav;}
+.footer{grid-area: footer;}
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'leftnav content-area rightnav'
+    'leftnav footer footer'
+    ;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+.grid-container > div{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}

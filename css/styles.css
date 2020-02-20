@@ -1,0 +1,19 @@
+.main{
+    border: 2px solid green;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+div#id1 p{
+    background-color: aqua;
+}
+div#id2>p{
+    background-color: blueviolet;
+}
+div#id2+p{
+    background-color:brown;
+}
+div#id2~p{
+    background-color:yellow;
+}
